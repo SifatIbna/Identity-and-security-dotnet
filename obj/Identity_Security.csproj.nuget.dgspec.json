@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Identity_Security.csproj": {}
+    "T:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Identity_Security.csproj": {}
   },
   "projects": {
-    "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Identity_Security.csproj": {
+    "T:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Identity_Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Identity_Security.csproj",
+        "projectUniqueName": "T:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Identity_Security.csproj",
         "projectName": "Identity_Security",
-        "projectPath": "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Identity_Security.csproj",
+        "projectPath": "T:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Identity_Security.csproj",
         "packagesPath": "S:\\Users\\sifat\\.nuget\\packages\\",
-        "outputPath": "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\obj\\",
+        "outputPath": "T:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "S:\\Users\\sifat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net5.0"
         ],
         "sources": {
+          "S:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,6 +49,12 @@
               "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.13, )"
             }

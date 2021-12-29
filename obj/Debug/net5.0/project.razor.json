@@ -15629,6 +15629,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Views\\Home\\Member.cshtml",
+      "TargetPath": "Views\\Home\\Member.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Views\\Home\\Admin.cshtml",
+      "TargetPath": "Views\\Home\\Admin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
