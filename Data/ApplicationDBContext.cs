@@ -10,7 +10,7 @@ namespace Identity_Security.Data
 
         }
 
-        public ApplicationDBContext(DbContextOptions options)
+        public ApplicationDBContext(DbContextOptions options) : base(options)
         {
 
         }
