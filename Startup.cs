@@ -41,6 +41,12 @@ namespace Identity_Security
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
             });
 
+            services.ConfigureApplicationCookie(option =>
+            {
+                option.LoginPath = "/identity/SignIn";
+                option.AccessDeniedPath = "/identity/AccessDenied";
+            });
+
             services.AddControllersWithViews();
         }
 
