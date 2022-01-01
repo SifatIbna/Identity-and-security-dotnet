@@ -15644,6 +15644,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Views\\Identity\\Signup.cshtml",
+      "TargetPath": "Views\\Identity\\Signup.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "t:\\WorkSpace\\Developing\\DotNet\\Identity_Security\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
