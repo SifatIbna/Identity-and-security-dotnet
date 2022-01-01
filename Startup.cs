@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Identity_Security.Data;
+using Identity_Security.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -39,6 +40,8 @@ namespace Identity_Security
 
                 options.Lockout.MaxFailedAccessAttempts = 3;
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+
+                options.SignIn.RequireConfirmedEmail = true;
             });
 
             services.ConfigureApplicationCookie(option =>
@@ -46,6 +49,9 @@ namespace Identity_Security
                 option.LoginPath = "/identity/SignIn";
                 option.AccessDeniedPath = "/identity/AccessDenied";
             });
+
+            services.Configure<SmtpOptions>(Configuration.GetSection("smtp"));
+            services.AddSingleton<IEmailSender, SmtpEmailSender>();
 
             services.AddControllersWithViews();
         }
